@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Sign Up</title>
 </head>
 <body>
-    <form action="" method="post" >
     <div id="container">
-        <div>
-            <img src="logo.jpg" alt="background image" width="50px" height="50px">
+        <div id="logoSect">
+            <img src="odin-lined.png" alt="background image" width="50px" height="50px"><p>ODIN</p>
+            
         </div>
         <div>
+            <form action="" method="post" ></form>
             <fieldset>
                 <p>At Techspace we guarantee to deliver your team fast reliable and robust services to meet your team's product development life cycle.
                     We ensure your team is able to deliver high quality and sustainable solutions to your clients.
@@ -21,29 +23,30 @@
             <fieldset>
                 <h2>Let's do this!</h2>
                 <div id="details">
-                    <div>
+                    <div class="bio">
                         <label for="firstName">FIRST NAME</label>
                         <input type="text" name="firstName" id="firstName" placeholder="Jane">
                     </div>
-                    <div>
+                    <div class="bio">
                         <label for="lastName">LAST NAME</label>
                         <input type="text" name="lastName" id="lastName" placeholder="Thompson">
                     </div>
-                    <div>
+                    <div class="bio">
                         <label for="email">Email</label>
                         <input type="email" name="Email" id="Email" placeholder="jtex@gmail.com">
                     </div>
-                    <div>
+                    <div class="bio">
                         <label for="TelNo">PHONE NUMBER</label>
-                        <input type="number" name="PHONE NUMBER" id="TelNo" placeholder="0712567834">
+                        <input type="tel" name="PHONE NUMBER" id="TelNo" placeholder="0712567834">
                     </div>
-                    <div>
+                    <div class="bio">
                         <label for="password">PASSWORD</label>
                         <input type="password" name="PASSWORD" id="password">
                     </div>
-                    <div>
+                    <div class="bio">
                         <label for="Cpassword">Confirm PASSWORD</label>
                         <input type="password" name="Confirm password" id="Cpassword">
+                        <span id="passwordError" class="error-message"></span>
                     </div>
                 </div>
             </fieldset>
@@ -51,8 +54,10 @@
                 <button>Create Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </fieldset>
+            </form>
         </div>
-    </div>
-    </form>
+        
+    </div> 
+    <script src="script.js"></script>
 </body>
 </html>

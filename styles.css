@@ -1,0 +1,54 @@
+#container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+input:focus{
+    border-color: blue;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 255, 0.4);
+}
+
+#logoSect{
+    background-image: url(bk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+#details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:10px;
+    max-width: 400px;
+}
+.bio{
+    max-width: 180px;
+    gap: 50px;
+    margin-bottom: 5px;
+}
+fieldset{
+    border: none;
+}
+
+button{
+    border-radius:4px;
+    padding: 10px;
+    background-color: green;
+    border-color: green;
+
+}
